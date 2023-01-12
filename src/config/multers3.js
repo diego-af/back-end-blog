@@ -6,8 +6,8 @@ import multer from "multer";
 import path from "path";
 
 aws.config.update({
-  accessKeyId: "AKIAUGZJSVXCEV3PWGEU",
-  secretAccessKey: "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",
+  accessKeyId: process.env.AMAZZON_ID,
+  secretAccessKey: process.env.AMAZON_ACCESS_KEY,
   region: "sa-east-1",
 });
 
