@@ -1,4 +1,4 @@
-import { Router } from "express";
+const express = require("express");
 import { CreatePostController } from "../controllers/post/CreatePostController";
 import { DeletePostController } from "../controllers/post/DeletePostController";
 import { GetPostController } from "../controllers/post/GetPostController";
@@ -11,7 +11,7 @@ import { GetUsersController } from "../controllers/User/GetUsersController";
 import { UpdateUser } from "../controllers/User/UpdateUser";
 import upload from "../config/multers3";
 
-const router = Router();
+const router = express.Router();
 
 const createUserController = new CreateUserController();
 const updateUser = new UpdateUser();
