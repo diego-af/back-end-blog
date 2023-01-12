@@ -1,4 +1,4 @@
-const express = require("express");
+import { Router } from "express";
 import { CreatePostController } from "../controllers/post/CreatePostController";
 import { DeletePostController } from "../controllers/post/DeletePostController";
 import { GetPostController } from "../controllers/post/GetPostController";
