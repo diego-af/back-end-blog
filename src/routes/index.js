@@ -11,7 +11,7 @@ import { GetUsersController } from "../controllers/User/GetUsersController";
 import { UpdateUser } from "../controllers/User/UpdateUser";
 import upload from "../config/multers3";
 
-const router = express.Router();
+const router = Router();
 
 const createUserController = new CreateUserController();
 const updateUser = new UpdateUser();
